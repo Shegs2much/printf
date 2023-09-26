@@ -6,11 +6,11 @@
  * @c: char types.
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags.
- * @width: get width.
+ * @width:  width.
  * @precision: precision specifier
  * @size: Size specifier
  *
- * Return: Number of chars printed.
+ * Return: D Number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
@@ -52,7 +52,7 @@ int handle_write_char(char c, char buffer[],
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
- * @precision: precision specifier
+ * @precision: precision specifie relax bro
  * @size: Size specifier
  *
  * Return: Number of chars printed.
@@ -83,8 +83,8 @@ int write_number(int is_negative, int ind, char buffer[],
  * @ind: Index at which the number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
- * @width: width
- * @prec: Precision specifier
+ * @width: width if all is well
+ * @prec: Precision specifier on time
  * @length: Number length
  * @padd: Pading char
  * @extra_c: Extra char
@@ -138,7 +138,7 @@ int write_num(int ind, char buffer[],
 }
 
 /**
- * write_unsgnd - Writes an unsigned number
+ * write_unsgnd : Writes an unsigned number i.e unsent message
  * @is_negative: Number indicating if the num is negative
  * @ind: Index at which the number starts in the buffer
  * @buffer: Array of chars
@@ -199,7 +199,7 @@ int write_unsgnd(int is_negative, int ind,
  * write_pointer - Write a memory address
  * @buffer: Arrays of chars
  * @ind: Index at which the number starts in the buffer
- * @length: Length of number
+ * @length: Length of number ,some numbers are looong
  * @width: Width specifier
  * @flags: Flags specifier
  * @padd: Char representing the padding
